@@ -1,0 +1,53 @@
+:root {
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+  --breakpoint-min: 320px;
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-grey-200: hsl(0, 0%, 85%);
+
+  --font-alata: "Alata", sans-serif;
+  --font-josefin-sans: "Josefin Sans", sans-serif;
+
+  --weight-regular: 400;
+  --weight-light: 300;
+
+  --font-body: 15px;
+}
+body {
+  font-family: var(--font-alata);
+  font-size: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+.hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-josefin-sans);
+  color: var(--color-white);
+  position: relative;
+}
+.hero-box {
+  max-width: 400px;
+  border: 2px solid var(--color-white);
+  padding: 1.5rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: var(--weight-regular);
+  line-height: 1.2;
+}
+@media (min-whidth: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero-box {
+    max-width: 500px;
+  }
+}
