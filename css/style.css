@@ -73,3 +73,27 @@ body {
     margin-top: 270px;
   }
 }
+.creation-card {
+  cursor: pointer;
+  position: relative;
+}
+.creation-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+  &:overlay-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--color-white);
+    font-family: var(--font-josefin-sans);
+    max-width: 80%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+}
+
+.creation-card:hover img {
+  transform: scale(1.05);
+}
