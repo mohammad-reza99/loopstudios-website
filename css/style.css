@@ -50,4 +50,26 @@ body {
   .hero-box {
     max-width: 500px;
   }
+  .about-text {
+    background-color: var(--color-white);
+    padding: 2rem;
+    font-family: var(--font-alata);
+  }
+}
+.about-text h2 {
+  font-family: var(--font-josefin-sans);
+  font-weight: var(--weight-light);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  font-size: var(--font-body);
+  font-weight: var(--weight-regular);
+  color: var(--color-grey-200);
+}
+@media (min-width: 992px) {
+  .about-text {
+    margin-left: -150px;
+    margin-top: 270px;
+  }
 }
